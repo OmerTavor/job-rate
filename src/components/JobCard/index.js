@@ -10,6 +10,7 @@ import {
   Paper,
 } from '@mui/material';
 import styles from './styles';
+import { borderColor, Box } from '@mui/system';
 
 const JobCard = () => {
   return (
@@ -20,10 +21,10 @@ const JobCard = () => {
           <Typography variant="h4">9.6</Typography>
         </Paper>
         <Divider orientation="vertical" flexItem={true} />
-        <CardActionArea sx={styles.jobCardActionAreaStyle}>
-          <Button>omer</Button>
-          <Button>matan</Button>
-        </CardActionArea>
+        <Box sx={styles.jobCardActionContainerStyle}>
+          <Button variant="outlined" sx={styles.buttonStyle}>view</Button>
+          <Button variant="outlined" sx={styles.buttonStyle}>edit</Button>
+        </Box>
       </CardContent>
     </Card>
   );

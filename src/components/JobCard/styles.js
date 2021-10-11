@@ -2,21 +2,23 @@ const styles = {
   jobCardStyle: {
     width: '100%',
     height: '20%',
+    backgroundColor: '#FCEBEB',
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
   },
   jobCardContentStyle: {
-    width: '200px',
+    width: '220px',
     marginTop: '10px',
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-around',
   },
-  jobCardActionAreaStyle: {
+  jobCardActionContainerStyle: {
     height: '100px',
+    marginLeft: '10px',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -31,6 +33,9 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
   },
+  buttonStyle: {
+    width: '80px'
+  }
 };
 
 export default styles;
