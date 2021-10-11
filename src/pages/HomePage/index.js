@@ -1,13 +1,13 @@
 import React from 'react';
-import JobCard from '../../components/JobCard';
+import JobCardList from '../../components/JobCardList';
 import styles from './styles.module.css';
 
 const HomePage = () => {
   return (
     <div className={styles.homePageStyle}>
       {/* <div className={`${styles.jobsListStyle} ${styles.extra}`}> */}
-      <div className={styles.jobsListStyle}>
-        <JobCard />
+      <div className={styles.jobsListContainerStyle}>
+        <JobCardList />
       </div>
     </div>
   );

@@ -1,15 +1,22 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  font-family: sans-serif;
 }
 
 .defaultAppPage {
-    width: 100vw;
-    height: 100vh;
-    background-color: #FBF2EA;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fbf2ea;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
 }
