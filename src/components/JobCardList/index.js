@@ -3,46 +3,22 @@ import { List, ListItem } from '@mui/material';
 import JobCard from '../JobCard';
 import styles from './styles';
 
-const JobCardList = () => {
-  //   const renderJobCards = () => {
+const JobCardList = ({ jobCardListData }) => {
+  const renderJobCards = () => {
+    console.log(jobCardListData);
+    return jobCardListData.map((jobCardData) => {
+      return (
+        <ListItem key={jobCardData.id}>
+          <JobCard
+            companyName={jobCardData.companyName}
+            grade={jobCardData.grade}
+          />
+        </ListItem>
+      );
+    });
+  };
 
-  //   };
-
-  return (
-    <List sx={styles.jobsListStyle}>
-      <ListItem>
-        <JobCard />
-      </ListItem>
-      <ListItem>
-        <JobCard />
-      </ListItem>
-      <ListItem>
-        <JobCard />
-      </ListItem>
-      <ListItem>
-        <JobCard />
-      </ListItem>
-      <ListItem>
-        <JobCard />
-      </ListItem>
-      <ListItem>
-        <JobCard />
-      </ListItem>
-      <ListItem>
-        <JobCard />
-      </ListItem>
-      <ListItem>
-        <JobCard />
-      </ListItem>
-      <ListItem>
-        <JobCard />
-      </ListItem>
-      <ListItem>
-        <JobCard />
-      </ListItem>
-
-    </List>
-  );
+  return <List sx={styles.jobsListStyle}>{renderJobCards()}</List>;
 };
 
 export default JobCardList;

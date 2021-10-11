@@ -12,13 +12,13 @@ import {
 } from '@mui/material';
 import styles from './styles';
 
-const JobCard = () => {
+const JobCard = (props) => {
   return (
     <Card sx={styles.jobCardStyle}>
-      <CardHeader title="Wix.com" subheader="I wanna go home" />
+      <CardHeader title={props.companyName} />
       <CardContent sx={styles.jobCardContentStyle}>
         <Paper elevation={3} sx={styles.gradeStyle}>
-          <Typography variant="h4">9.6</Typography>
+          <Typography variant="h4">{props.grade}</Typography>
         </Paper>
         <Divider orientation="vertical" flexItem={true} />
         <Box sx={styles.jobCardActionContainerStyle}>
