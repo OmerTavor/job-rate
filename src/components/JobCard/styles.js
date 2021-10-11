@@ -1,7 +1,7 @@
 const styles = {
   jobCardStyle: {
     width: '100%',
-    height: '20%',
+    height: '120px',
     backgroundColor: '#FCEBEB',
     display: 'flex',
     flexDirection: 'row',
@@ -34,7 +34,8 @@ const styles = {
     alignItems: 'center',
   },
   buttonStyle: {
-    width: '80px'
+    width: '80px',
+    height: '27px'
   }
 };
 
