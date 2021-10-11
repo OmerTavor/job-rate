@@ -10,14 +10,33 @@ import {
   Paper,
   Box,
 } from '@mui/material';
+import ColorScale from 'color-scales';
 import styles from './styles';
 
+const redYellowGreenColorScale = new ColorScale(0, 10, [
+  '#ff0000',
+  '#ff8000',
+  '#ffff00',
+  '#80ff00',
+  '#00CC00',
+]);
+
 const JobCard = (props) => {
+  const determineGradeColor = () => {
+    return redYellowGreenColorScale.getColor(props.grade).toHexString();
+  };
+
   return (
     <Card sx={styles.jobCardStyle}>
       <CardHeader title={props.companyName} />
       <CardContent sx={styles.jobCardContentStyle}>
-        <Paper elevation={3} sx={styles.gradeStyle}>
+        <Paper
+          elevation={3}
+          sx={{
+            ...styles.gradeStyle,
+            ...{ backgroundColor: determineGradeColor() },
+          }}
+        >
           <Typography variant="h4">{props.grade}</Typography>
         </Paper>
         <Divider orientation="vertical" flexItem={true} />

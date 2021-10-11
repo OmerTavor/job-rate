@@ -36,7 +36,7 @@ const jobCardsDummyData = [
   {
     id: '7',
     companyName: 'Palo Alto Networks',
-    grade: 7.8,
+    grade: 0,
   },
 ];
 

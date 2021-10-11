@@ -25,7 +25,6 @@ const styles = {
     justifyContent: 'space-evenly',
   },
   gradeStyle: {
-    backgroundColor: 'green',
     minWidth: '100px',
     minHeight: '100px',
     marginRight: '10px',

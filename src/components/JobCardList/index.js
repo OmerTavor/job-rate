@@ -5,7 +5,6 @@ import styles from './styles';
 
 const JobCardList = ({ jobCardListData }) => {
   const renderJobCards = () => {
-    console.log(jobCardListData);
     return jobCardListData.map((jobCardData) => {
       return (
         <ListItem key={jobCardData.id}>
