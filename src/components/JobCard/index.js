@@ -1,9 +1,10 @@
 import React from 'react';
 import {
-  Box,
   Typography,
+  Button,
+  Divider,
   Card,
-  CardActions,
+  CardActionArea,
   CardHeader,
   CardContent,
   Paper,
@@ -14,11 +15,16 @@ const JobCard = () => {
   return (
     <Card sx={styles.jobCardStyle}>
       <CardHeader title="Wix.com" subheader="I wanna go home" />
-      <Box sx={styles.gradeContainerStyle}>
+      <CardContent sx={styles.jobCardContentStyle}>
         <Paper elevation={3} sx={styles.gradeStyle}>
           <Typography variant="h4">9.6</Typography>
         </Paper>
-      </Box>
+        <Divider orientation="vertical" flexItem={true} />
+        <CardActionArea sx={styles.jobCardActionAreaStyle}>
+          <Button>omer</Button>
+          <Button>matan</Button>
+        </CardActionArea>
+      </CardContent>
     </Card>
   );
 };
