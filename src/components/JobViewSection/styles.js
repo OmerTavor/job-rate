@@ -33,6 +33,7 @@ const styles = {
   noteTypographyStyle: {
     width: '35%',
     marginRight: '10px',
+    fontSize: 18,
     fontStyle: 'italic',
   },
 };

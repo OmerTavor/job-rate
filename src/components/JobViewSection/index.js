@@ -14,7 +14,7 @@ const JobViewSection = (props) => {
         <Typography variant="h5">9.6</Typography>
       </Paper>
       <NoteIcon sx={styles.noteIconStyle} />
-      <Typography sx={styles.noteTypographyStyle} variant="h6">
+      <Typography sx={styles.noteTypographyStyle}>
         "
         {`work from home option 3/5 fmkmf mjfkdjf kjfdkijf fdkjfds jfkedjf lkfd`}
         "
