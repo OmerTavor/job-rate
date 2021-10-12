@@ -1,0 +1,18 @@
+.homePageStyle {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.jobsListContainerStyle {
+  width: 80%;
+  margin-top: 20px;
+  /* background-color: crimson; */
+}
+
+/* .extra {
+  background-color: cornflowerblue;
+} */
