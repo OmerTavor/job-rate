@@ -1,10 +1,11 @@
 import React from 'react';
+import JobView from '../../components/JobView';
 import styles from './styles.module.css';
 
 const ViewPage = () => {
   return (
     <div className={styles.viewPageStyle}>
-      <h1>View Pgae</h1>
+      <JobView />
     </div>
   );
 };
