@@ -1,6 +1,6 @@
 const styles = {
   jobViewListStyle: {
-    width: '85%',
+    width: '90%',
     height: '600px',
     marginTop: '30px',
     // backgroundColor: '#e5e4e2',
@@ -9,7 +9,7 @@ const styles = {
   },
   jobViewListItemStyle: {
     width: '100%',
-    height: '12%',
+    minHeight: '12%',
   },
 };
 
