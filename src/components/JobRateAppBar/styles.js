@@ -1,6 +1,7 @@
 const styles = {
   appBarStyle: {
     backgroundColor: '#ef4f6f',
+    height: '64px'
   },
   homeIconStyle: {
     color: '#ffffff',

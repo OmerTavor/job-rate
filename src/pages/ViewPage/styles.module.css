@@ -1,9 +1,8 @@
 .viewPageStyle {
-  width: 100vw;
-  height: 100vh;
-  background-color: blueviolet;
+  width: 100%;
+  min-height: calc(100vh - var(--appbar-height));
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: start;
   align-items: center;
 }
