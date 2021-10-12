@@ -1,11 +1,13 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+import JobRateAppBar from './components/JobRateAppBar';
 import HomePage from './pages/HomePage';
 import ViewPage from './pages/ViewPage';
 
 const App = () => {
   return (
     <div className="defaultAppPage">
+      <JobRateAppBar />
       <Switch>
         <Route path="/view" exact>
           <ViewPage />
