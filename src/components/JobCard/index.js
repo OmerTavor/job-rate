@@ -4,22 +4,13 @@ import {
   Button,
   Divider,
   Card,
-  CardActionArea,
   CardHeader,
   CardContent,
   Paper,
   Box,
 } from '@mui/material';
-import ColorScale from 'color-scales';
+import { redYellowGreenColorScale } from '../../assets/colorScale';
 import styles from './styles';
-
-const redYellowGreenColorScale = new ColorScale(0, 10, [
-  '#ff0000',
-  '#ff8000',
-  '#ffff00',
-  '#80ff00',
-  '#00CC00',
-]);
 
 const JobCard = (props) => {
   const determineGradeColor = () => {

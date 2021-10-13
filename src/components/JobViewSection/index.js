@@ -1,24 +1,51 @@
 import { Typography, Paper, Box } from '@mui/material';
+import { redYellowGreenColorScale } from '../../assets/colorScale';
 import NoteIcon from '@mui/icons-material/Article';
 import QIcon from '@mui/icons-material/Search';
 import styles from './styles';
 
-const JobViewSection = (props) => {
+const JobViewSection = ({ questionDetail, isGolden, grade, note }) => {
+  const determineGradeColor = () => {
+    return redYellowGreenColorScale.getColor(grade).toHexString();
+  };
+
+  const getColorByIfGolden = () => (isGolden ? '#FFD700' : '#A9A9A9');
+
+  const renderNoteIcon = () => {
+    if (note && note !== '') {
+      return (
+        <NoteIcon
+          sx={{ ...styles.noteIconStyle, ...{ color: getColorByIfGolden() } }}
+        />
+      );
+    }
+  };
+
+  const renderNoteTypography = () => {
+    if (note && note !== '') {
+      return <Typography sx={styles.noteTypographyStyle}>"{note}"</Typography>;
+    }
+  };
+
   return (
     <Box sx={styles.sectionContainerStyle}>
-      <QIcon sx={styles.qIconStyle} />
+      <QIcon
+        sx={{ ...styles.qIconStyle, ...{ color: getColorByIfGolden() } }}
+      />
       <Typography sx={styles.questionTypograpghyStyle} variant="h6">
-        High level of flexibility at work (home / office, arrival / departure)?
+        {questionDetail}
       </Typography>
-      <Paper elevation={3} sx={styles.gradePaperStyles}>
-        <Typography variant="h5">9.6</Typography>
+      <Paper
+        elevation={3}
+        sx={{
+          ...styles.gradePaperStyles,
+          ...{ backgroundColor: determineGradeColor() },
+        }}
+      >
+        <Typography variant="h5">{grade}</Typography>
       </Paper>
-      <NoteIcon sx={styles.noteIconStyle} />
-      <Typography sx={styles.noteTypographyStyle}>
-        "
-        {`work from home option 3/5 fmkmf mjfkdjf kjfdkijf fdkjfds jfkedjf lkfd`}
-        "
-      </Typography>
+      {renderNoteIcon()}
+      {renderNoteTypography()}
     </Box>
   );
 };

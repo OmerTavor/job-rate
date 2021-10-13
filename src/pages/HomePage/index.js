@@ -6,7 +6,7 @@ const jobCardsDummyData = [
   {
     id: '1',
     companyName: 'Wix.com',
-    grade: 9.6,
+    grade: 7,
   },
   {
     id: '2',
@@ -16,27 +16,27 @@ const jobCardsDummyData = [
   {
     id: '3',
     companyName: 'Google',
-    grade: 7.5,
+    grade: 6.2,
   },
   {
     id: '4',
     companyName: 'Taboola',
-    grade: 7,
+    grade: 4.8,
   },
   {
     id: '5',
     companyName: 'Amazon',
-    grade: 5.5,
+    grade: 2.5,
   },
   {
     id: '6',
     companyName: 'Vim',
-    grade: 7.2,
+    grade: 5.5,
   },
   {
     id: '7',
     companyName: 'Palo Alto Networks',
-    grade: 0,
+    grade: 3.7,
   },
 ];
 
